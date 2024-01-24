@@ -4,28 +4,27 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <form>
+        <form action="skrypt.php" method="get">
             <fieldset><legend>Formularz zgłoszeniowy</legend>
                 Imie:<br>
-                <input type="text"><br>
+                <input type="text" name="imie"><br>
                 Nazwisko:<br>
-                <input type="text"><br>
+                <input type="text" name="nazwisko"><br>
                 Wiek:<br>
-                <input type="number"><br>
+                <input type="number" name="wiek"><br>
                 Adres email:<br>
-                <input type="email"><br>
+                <input type="email" name="email"><br>
                 <br>
                 <b>Wykształcenie</b><br>
                 <br>
-                <input type="radio" name="w">Podstawowe<br>
-                <input type="radio" name="w">Średnie<br>
-                <input type="radio" name="w">Wyższe<br>
+                <input type="radio" name="w" value="Podstawowe">Podstawowe<br>
+                <input type="radio" name="w" value="Średnie">Średnie<br>
+                <input type="radio" name="w" value="Wyższe">Wyższe<br>
                 <br>
-                <input type="checkbox">Zgadzam się na przetwarzanie moich danych osobowych<br>
+                <input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych osobowych<br>
                 <br>
                 <button type="submit">Wyślij</button>
                 <button type="reset">Wyczyść</button>
-
             </fieldset>
         </form>
     </body>
