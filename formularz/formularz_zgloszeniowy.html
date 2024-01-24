@@ -31,7 +31,18 @@
                 </select>
                 <br>
 
-                <input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych osobowych<br>
+                <!--zad_1-->
+                <br>
+                <label>Ulubiona pora roku:</label><br>
+                <input list="poraRoku" name="poraRoku">
+                <datalist id="poraRoku">
+                    <option value="Wiosna">
+                    <option value="Lato">
+                    <option value="Jesień">
+                    <option value="Zima">
+                </datalist><br>
+
+                <br><input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych osobowych<br>
                 <br>
                 <button type="submit">Wyślij</button>
                 <button type="reset">Wyczyść</button>
@@ -39,3 +50,4 @@
         </form>
     </body>
 </html>
+
