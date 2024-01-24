@@ -4,7 +4,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <form action="skrypt.php" method="get">
+        <form action="skrypt.php" method="post"> 
             <fieldset><legend>Formularz zgłoszeniowy</legend>
                 Imie:<br>
                 <input type="text" name="imie"><br>
@@ -21,6 +21,16 @@
                 <input type="radio" name="w" value="Średnie">Średnie<br>
                 <input type="radio" name="w" value="Wyższe">Wyższe<br>
                 <br>
+
+                <p>Wybór języka</p>
+                <select name="jezyk[]" size="4" multiple>
+                    <option>Python</option>
+                    <option>PHP</option>
+                    <option>JavaScript</option>
+                    <option>MySQL</option>
+                </select>
+                <br>
+
                 <input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych osobowych<br>
                 <br>
                 <button type="submit">Wyślij</button>
