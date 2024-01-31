@@ -4,7 +4,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <form action="skrypt.php" method="post"> 
+        <form action="skrypt.php" method="post" enctype="multipart/form-data">  <!--enctype="text/plain"--> 
             <fieldset><legend>Formularz zgłoszeniowy</legend>
                 Imie:<br>
                 <input type="text" name="imie"><br>
@@ -40,9 +40,11 @@
                     <option value="Lato">
                     <option value="Jesień">
                     <option value="Zima">
-                </datalist><br>
+                </datalist><br><br>
 
-                <br><input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych osobowych<br>
+                <label>Prześlij plik: <input type="file" name="plik1"></label>
+
+                <br><br><input type="checkbox" name="zgoda">Zgadzam się na przetwarzanie moich danych osobowych<br>
                 <br>
                 <button type="submit">Wyślij</button>
                 <button type="reset">Wyczyść</button>
@@ -50,4 +52,3 @@
         </form>
     </body>
 </html>
-
