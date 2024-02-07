@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Formularz aplikacyjny</title>
+<meta charset = "utf-8" />
+
+</head>
+<body>
+<form action="skrypt.php" method="post" enctype="multiple/form-data">
+
+<p>Formularz aplikacyjny</p>	
+Nazwisko:<br />
+<input type="text" name="nazw" value=" " size="30"><br />
+Imię:<br />
+<input type="text" name="imie" value=" " size="30"><br />
+Adres e-mail:<br />
+<input type="email" name="adr" value=" " size="30"><br />	
+Zawód:<br />
+<input type="text" name="zaw" value=" " size="30"><br />
+
+<p>Wykształcenie</p>
+<input type="radio" name="wykszt" value="podstawowe">Podstawowe<br />		
+<input type="radio" name="wykszt" value="srednie">Średnie<br />
+<input type="radio" name="wykszt" value="wyzsze">Wyższe<br />
+
+<p>Dodatkowe uprawnienia</p>
+<select name="opcje" value="opcje">
+<option>certyfikat językowy</option>
+<option>prawo jazdy</option>
+<option>kurs kwalifikacyjny</option>
+<option>kurs trenerski</option>
+<option>certyfikat umiejętności</option>
+</select>
+</br>
+
+<label><p>Wyslij plik</p></label>
+<input type="hidden" name="max_file_size" value="40"><br>
+<input type="file" name="plik1"><br />	
+</label>
+
+
+<input type="checkbox" name="opcja" maxlength="1">Zgadzam się na przetwarzanie moich danych osobowych<br /><br />
+
+<input type="submit" value="Wyślij" name="wyslij">&nbsp; &nbsp;	
+<input type="reset" value="Wyczyść" name="zeruj">
+</form>
+</body>
+</html>
