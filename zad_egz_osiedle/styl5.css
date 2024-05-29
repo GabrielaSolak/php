@@ -1,0 +1,33 @@
+*{
+    font-family: Tahoma;
+}
+
+#baner_l, #baner_p{
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    height: 50px;
+    float: left;
+}
+
+#baner_l{
+    width: 70%;
+}
+
+#baner_p{
+    width: 30%;
+}
+
+#lewy{
+    background-color: #26a69a;
+    height: 550px;
+    width: 30%;
+    float: left;
+}
+
+#prawy{
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+    float: left;
+}
